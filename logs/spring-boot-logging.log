@@ -370,3 +370,82 @@
 2021-03-31 12:09:19.408  INFO 8460 --- [http-nio-8080-exec-9] r.a.phonebook.PhoneBookController        : called method getAllContacts
 2021-03-31 12:09:20.564  INFO 8460 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: gdfgfd, lastName: gfd, phone: gfd }
 2021-03-31 12:09:20.569  INFO 8460 --- [http-nio-8080-exec-2] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:34.660  INFO 11696 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication on DESKTOP-M0SQP0I with PID 11696 (C:\Users\Pc\IdeaProjects\PhoneBookSpring\target\classes started by Pc in C:\Users\Pc\IdeaProjects\PhoneBookSpring)
+2021-03-31 12:14:34.662 DEBUG 11696 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2021-03-31 12:14:34.662  INFO 11696 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to default profiles: default
+2021-03-31 12:14:35.398  INFO 11696 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 711 ms
+2021-03-31 12:14:35.709  INFO 11696 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19e4653c: startup date [Wed Mar 31 12:14:34 NOVT 2021]; root of context hierarchy
+2021-03-31 12:14:35.735  INFO 11696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/api/v1/hello],methods=[GET]}" onto public java.lang.String ru.academits.hello.HelloWorldController.sayHello(java.lang.String)
+2021-03-31 12:14:35.736  INFO 11696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/getAllContacts],methods=[GET]}" onto public java.util.List<ru.academits.model.Contact> ru.academits.phonebook.PhoneBookController.getAllContacts()
+2021-03-31 12:14:35.736  INFO 11696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/addContact],methods=[POST]}" onto public ru.academits.model.ContactValidation ru.academits.phonebook.PhoneBookController.addContact(ru.academits.model.Contact)
+2021-03-31 12:14:35.737  INFO 11696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/deleteContact],methods=[POST]}" onto public ru.academits.model.ContactValidation ru.academits.phonebook.PhoneBookController.deleteContact(ru.academits.model.Contact)
+2021-03-31 12:14:35.738  INFO 11696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-03-31 12:14:35.738  INFO 11696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-03-31 12:14:35.753  INFO 11696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-31 12:14:35.753  INFO 11696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-31 12:14:35.763  INFO 11696 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorController
+2021-03-31 12:14:35.773  INFO 11696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-31 12:14:35.998  INFO 11696 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: Иван, lastName: Иванов, phone: 9123456789 }
+2021-03-31 12:14:36.023  INFO 11696 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 1.513 seconds (JVM running for 1.84)
+2021-03-31 12:14:42.156  INFO 11696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-03-31 12:14:42.169  INFO 11696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2021-03-31 12:14:42.188  INFO 11696 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:42.562  INFO 11696 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:44.107  INFO 11696 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: sdfsd, lastName: dsf, phone: fsdf }
+2021-03-31 12:14:44.113  INFO 11696 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:46.001  INFO 11696 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: sdfsd, lastName: dsf, phone: fsdf }
+2021-03-31 12:14:46.297  INFO 11696 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: sdfsd, lastName: fsdf, phone: fsdfdfsd }
+2021-03-31 12:14:46.302  INFO 11696 --- [http-nio-8080-exec-8] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:46.766  INFO 11696 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:47.026  INFO 11696 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:47.223  INFO 11696 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:47.420  INFO 11696 --- [http-nio-8080-exec-9] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:47.570  INFO 11696 --- [http-nio-8080-exec-2] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:47.722  INFO 11696 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:47.874  INFO 11696 --- [http-nio-8080-exec-8] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:48.022  INFO 11696 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:48.187  INFO 11696 --- [http-nio-8080-exec-4] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:48.359  INFO 11696 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:48.511  INFO 11696 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:48.671  INFO 11696 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:48.826  INFO 11696 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:48.983  INFO 11696 --- [http-nio-8080-exec-9] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:49.130  INFO 11696 --- [http-nio-8080-exec-2] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:49.299  INFO 11696 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:49.488  INFO 11696 --- [http-nio-8080-exec-8] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:49.624  INFO 11696 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:49.774  INFO 11696 --- [http-nio-8080-exec-4] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:49.942  INFO 11696 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:50.099  INFO 11696 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:50.254  INFO 11696 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:50.417  INFO 11696 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:50.579  INFO 11696 --- [http-nio-8080-exec-9] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:50.727  INFO 11696 --- [http-nio-8080-exec-2] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:50.921  INFO 11696 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:51.056  INFO 11696 --- [http-nio-8080-exec-8] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:51.224  INFO 11696 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:51.387  INFO 11696 --- [http-nio-8080-exec-4] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:51.541  INFO 11696 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:51.707  INFO 11696 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:51.911  INFO 11696 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:52.042  INFO 11696 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:52.244  INFO 11696 --- [http-nio-8080-exec-9] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:52.407  INFO 11696 --- [http-nio-8080-exec-2] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:52.537  INFO 11696 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:52.928  INFO 11696 --- [http-nio-8080-exec-8] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:53.222  INFO 11696 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:53.491  INFO 11696 --- [http-nio-8080-exec-4] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:53.758  INFO 11696 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:54.009  INFO 11696 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:54.300  INFO 11696 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:54.541  INFO 11696 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:54.786  INFO 11696 --- [http-nio-8080-exec-9] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:55.020  INFO 11696 --- [http-nio-8080-exec-2] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:55.227  INFO 11696 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:55.446  INFO 11696 --- [http-nio-8080-exec-8] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:55.681  INFO 11696 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:55.884  INFO 11696 --- [http-nio-8080-exec-4] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:56.004  INFO 11696 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: sdfsd, lastName: fsdf, phone: fsdfdfsd }
+2021-03-31 12:14:56.081  INFO 11696 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:56.272  INFO 11696 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-03-31 12:14:56.559  INFO 11696 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
