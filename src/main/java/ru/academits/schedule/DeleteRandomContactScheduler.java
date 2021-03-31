@@ -19,12 +19,12 @@ public class DeleteRandomContactScheduler {
 
     @Scheduled(fixedRate = 10000)
     public void deleteRandomContact() {
-        int count = contactDao.getAllContacts().size();
+        int contactListSize = contactDao.getAllContacts().size();
 
-        if (count > 0) {
+        if (contactListSize > 0) {
             Random random = new Random();
 
-            int index = random.nextInt(count);
+            int index = random.nextInt(contactListSize);
 
             logger.info("called method deleteRandomContact. Delete " + contactDao.getAllContacts().get(index));
 
