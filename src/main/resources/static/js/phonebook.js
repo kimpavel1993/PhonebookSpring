@@ -16,8 +16,7 @@ new Vue({
         lastName: "",
         phone: "",
         rows: [],
-        serverError: "",
-        term: ""
+        serverError: ""
     },
 
     methods: {
