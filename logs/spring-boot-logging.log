@@ -449,3 +449,78 @@
 2021-03-31 12:14:56.081  INFO 11696 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method getAllContacts
 2021-03-31 12:14:56.272  INFO 11696 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
 2021-03-31 12:14:56.559  INFO 11696 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:12:12.053  INFO 15704 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication on DESKTOP-M0SQP0I with PID 15704 (C:\Users\Pc\IdeaProjects\PhoneBookSpring\target\classes started by Pc in C:\Users\Pc\IdeaProjects\PhoneBookSpring)
+2021-04-07 18:12:12.055 DEBUG 15704 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2021-04-07 18:12:12.055  INFO 15704 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to default profiles: default
+2021-04-07 18:12:12.951  INFO 15704 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 868 ms
+2021-04-07 18:12:13.277  INFO 15704 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19e4653c: startup date [Wed Apr 07 18:12:12 NOVT 2021]; root of context hierarchy
+2021-04-07 18:12:13.306  INFO 15704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/api/v1/hello],methods=[GET]}" onto public java.lang.String ru.academits.hello.HelloWorldController.sayHello(java.lang.String)
+2021-04-07 18:12:13.307  INFO 15704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/getAllContacts],methods=[GET]}" onto public java.util.List<ru.academits.model.Contact> ru.academits.phonebook.PhoneBookController.getAllContacts()
+2021-04-07 18:12:13.307  INFO 15704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/deleteContact],methods=[POST]}" onto public ru.academits.model.ContactValidation ru.academits.phonebook.PhoneBookController.deleteContact(ru.academits.model.Contact)
+2021-04-07 18:12:13.308  INFO 15704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/addContact],methods=[POST]}" onto public ru.academits.model.ContactValidation ru.academits.phonebook.PhoneBookController.addContact(ru.academits.model.Contact)
+2021-04-07 18:12:13.309  INFO 15704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-04-07 18:12:13.309  INFO 15704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-07 18:12:13.325  INFO 15704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-07 18:12:13.326  INFO 15704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-07 18:12:13.336  INFO 15704 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorController
+2021-04-07 18:12:13.346  INFO 15704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-07 18:12:13.590  INFO 15704 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: Иван, lastName: Иванов, phone: 9123456789 }
+2021-04-07 18:12:13.617  INFO 15704 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 1.782 seconds (JVM running for 2.251)
+2021-04-07 18:15:46.153  INFO 15704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-04-07 18:15:46.177  INFO 15704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2021-04-07 18:15:46.359  INFO 15704 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:15:46.939  INFO 15704 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:15:48.486  INFO 15704 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:15:49.058  INFO 15704 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:15:51.033  INFO 15704 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:15:53.301  INFO 15704 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:15:55.376  INFO 15704 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:15:56.049  INFO 15704 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:15:59.945  INFO 15704 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: рапрап, lastName: рпар, phone: рпарапрап }
+2021-04-07 18:15:59.951  INFO 15704 --- [http-nio-8080-exec-4] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:16:02.833  INFO 15704 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: рапра, lastName: рпа, phone: пра }
+2021-04-07 18:16:02.838  INFO 15704 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:16:03.592  INFO 15704 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: рапра, lastName: рпа, phone: пра }
+2021-04-07 18:16:06.358  INFO 15704 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:16:13.595  INFO 15704 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: рапрап, lastName: рпар, phone: рпарапрап }
+2021-04-07 18:16:16.898  INFO 15704 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 18:28:38.289  INFO 15704 --- [http-nio-8080-exec-9] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:08.771  INFO 26280 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication on DESKTOP-M0SQP0I with PID 26280 (C:\Users\Pc\IdeaProjects\PhoneBookSpring\target\classes started by Pc in C:\Users\Pc\IdeaProjects\PhoneBookSpring)
+2021-04-07 19:00:08.773 DEBUG 26280 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2021-04-07 19:00:08.773  INFO 26280 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to default profiles: default
+2021-04-07 19:00:09.521  INFO 26280 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 725 ms
+2021-04-07 19:00:09.832  INFO 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19e4653c: startup date [Wed Apr 07 19:00:08 NOVT 2021]; root of context hierarchy
+2021-04-07 19:00:09.858  INFO 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello/api/v1/hello],methods=[GET]}" onto public java.lang.String ru.academits.hello.HelloWorldController.sayHello(java.lang.String)
+2021-04-07 19:00:09.859  INFO 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/getAllContacts],methods=[GET]}" onto public java.util.List<ru.academits.model.Contact> ru.academits.phonebook.PhoneBookController.getAllContacts()
+2021-04-07 19:00:09.859  INFO 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/addContact],methods=[POST]}" onto public ru.academits.model.ContactValidation ru.academits.phonebook.PhoneBookController.addContact(ru.academits.model.Contact)
+2021-04-07 19:00:09.859  INFO 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneBook/rpc/api/v1/deleteContact],methods=[POST]}" onto public ru.academits.model.ContactValidation ru.academits.phonebook.PhoneBookController.deleteContact(ru.academits.model.Contact)
+2021-04-07 19:00:09.860  INFO 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-04-07 19:00:09.860  INFO 26280 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-07 19:00:09.874  INFO 26280 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-07 19:00:09.874  INFO 26280 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-07 19:00:09.884  INFO 26280 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorController
+2021-04-07 19:00:09.893  INFO 26280 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-07 19:00:10.113  INFO 26280 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: Иван, lastName: Иванов, phone: 9123456789 }
+2021-04-07 19:00:10.137  INFO 26280 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 1.52 seconds (JVM running for 1.862)
+2021-04-07 19:00:12.362  INFO 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-04-07 19:00:12.373  INFO 26280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2021-04-07 19:00:12.508  INFO 26280 --- [http-nio-8080-exec-2] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:14.148  INFO 26280 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: dfgfdgfd, lastName: fg, phone: gfdg }
+2021-04-07 19:00:14.154  INFO 26280 --- [http-nio-8080-exec-4] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:15.546  INFO 26280 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: gfdg, lastName: dfgdf, phone: fdgfd }
+2021-04-07 19:00:15.551  INFO 26280 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:16.967  INFO 26280 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: gdf, lastName: gfdgdf, phone: gdfgfd }
+2021-04-07 19:00:16.972  INFO 26280 --- [http-nio-8080-exec-8] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:18.107  INFO 26280 --- [http-nio-8080-exec-9] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: dfgdfgd, lastName: fgdf, phone: gdfgd }
+2021-04-07 19:00:18.111  INFO 26280 --- [http-nio-8080-exec-10] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:19.195  INFO 26280 --- [http-nio-8080-exec-1] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: gdfgdf, lastName: gfdg, phone: dfgdfg }
+2021-04-07 19:00:19.199  INFO 26280 --- [http-nio-8080-exec-2] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:20.124  INFO 26280 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: gdf, lastName: gfdgdf, phone: gdfgfd }
+2021-04-07 19:00:20.662  INFO 26280 --- [http-nio-8080-exec-3] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: dfgfd, lastName: gdfgdf, phone: gdgdff }
+2021-04-07 19:00:20.666  INFO 26280 --- [http-nio-8080-exec-4] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:21.725  INFO 26280 --- [http-nio-8080-exec-5] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: gdfgdf, lastName: gdfg, phone: dfgdf }
+2021-04-07 19:00:21.729  INFO 26280 --- [http-nio-8080-exec-6] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:24.384  INFO 26280 --- [http-nio-8080-exec-7] r.a.phonebook.PhoneBookController        : called method addContact. Add Contact { firstName: gdfgdfgdfg, lastName: gdfg, phone: dfgdffgdf }
+2021-04-07 19:00:24.389  INFO 26280 --- [http-nio-8080-exec-8] r.a.phonebook.PhoneBookController        : called method getAllContacts
+2021-04-07 19:00:30.128  INFO 26280 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: gfdg, lastName: dfgdf, phone: fdgfd }
+2021-04-07 19:00:40.114  INFO 26280 --- [pool-1-thread-1] r.a.s.DeleteRandomContactScheduler       : called method deleteRandomContact. Delete Contact { firstName: gdfgdfgdfg, lastName: gdfg, phone: dfgdffgdf }
